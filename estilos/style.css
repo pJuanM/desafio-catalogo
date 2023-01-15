@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    background-image:linear-gradient(to bottom, #00A2BE, rgba(0, 0, 0, 0.815)) ;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+header > h1 {
+    cursor:pointer;
+    
+}
+header > h1:hover {
+    color: white;
+}
+header > .header-form0 {
+    display:none;
+}
+.header-icones {
+    display: flex;
+    align-items: center;
+}
+.header-icones a:hover {
+    fill: white;
+}
+
+.header-icones-instagram {
+    display: inline-block
+}
+.header-icones-facebook {
+    display: none;
+}
+.header-icones-linkedim {
+    display: none;
+}
+.header-icones-whatsapp {
+    display: inline-block;
+}
+.header-icones-whatsapp > svg {
+    margin-bottom: 5px;
+}
+.header-icones-twitter {
+    display: inline-block;
+}
+
+
+header > .header-form1 {
+   margin:auto;
+   position: relative;
+}
+header > .header-form1 > svg {
+    position: absolute;
+    right: 5px;
+    top: 27%;
+}
+header > .header-form1 > input {
+    margin-top: 10px;
+    text-indent: 10px;
+    width: 90vw;
+    padding: 7px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+
+nav {
+    background-color:rgba(0, 0, 0, 0.815) ;
+    padding: 10px 20px;
+    
+}
+nav > a {
+    margin-right: 15px;
+    color: white;
+    padding: 10px;
+}
+nav > a:hover {
+    background-color: #00a1bec5;
+    border-radius: 10px;
+}
+
+
+
+main {
+    background-color: rgb(180, 180, 197);
+    padding: 5px;
+    height: 100%;
+}
+main > article  h2 {
+    text-align: center;
+    margin: 20px 10px;
+    background-color: #188a9e;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+main > article h2:hover {
+    background-color:#00A2BE ;
+    color: white;
+}
+.main-thumb {
+    width: 100%;
+}
+.main-thumb > img {
+    max-width: 100%;
+}
+.main-thumb2 {
+    display: none;
+}
+.main-section-itens {
+
+       flex-direction: row;
+       justify-content: space-around;
+       padding: 10px 10px;
+       display: grid;
+       grid-template-columns: 50% 50%;
+       gap: 15px 2px;
+}
+
+
+.main-section-itens h2 {
+    text-align: center;
+}
+.main-section-item {
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 7px;
+}
+
+
+.main-section-item > picture {
+    width: 100%;    
+    height: 100px;
+}
+.main-section-item > picture > img {
+    margin: 0 auto;
+    width: 100%;
+    height: 12em;
+    object-fit: contain;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #00A2BE;
+    padding-top: 5px;
+}
+
+.main-section-item-paragrafo {
+    text-align: justify;
+    font-size: 0.9em;
+    width: 100%;
+    height: 5em;
+    padding: 5px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main-section-item-preco  {
+    padding: 7px 10px;
+
+}
+.main-section-item-preco-anterior {
+    color: #ACA299;
+    font-size: 1em;
+    margin-bottom: -10px;
+}
+.main-section-item-preco-anterior > span {
+    text-decoration: line-through;
+}
+.main-section-item-preco-novo {
+    font-size: 1.2em;
+    color: #00A2BE;
+    font-weight: bold;
+}
+.main-section-item-botao {
+    padding: 5px;
+}
+.main-section-item-botao > button {
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #00A2BE;
+}
+.main-section-item-botao >button:hover {
+    background-color: #4aaec0;
+    font-weight: bold;
+}
+
+
+
+main > aside {
+    background-color: #0000009d;
+    text-align: center;
+    padding-bottom: 7px;
+    border-radius: 10px;
+}
+main > aside > h3 {
+    margin-bottom: 10px;
+    color: white;
+    padding-top: 7px;
+}
+main > aside > label {
+    color: white;
+}
+main > aside > input {
+    border: none;
+    border-radius: 5px;
+    width: 60vw;
+    text-indent: 10px;
+    padding: 5px;
+    margin-left: 4px;
+}
+
+
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+footer > h3 {
+    margin-bottom: 5px;
+    padding-top: 1.4em;
+}
+footer > p {
+    padding-bottom: 2em;
+}   

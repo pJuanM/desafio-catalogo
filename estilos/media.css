@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@media (min-width:700px) and (max-width:949px) {
+    .main-section-itens {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+
+@media (min-width: 950px) {
+    .header-icones-facebook {
+        display: inline-block;
+    }
+    .header-icones-linkedim {
+        display: inline-block;
+    }
+    
+    header > .header-form1 {
+        margin: 0px;
+        display:none;
+    }
+    header > .header-form0 {
+        margin: auto;
+        position: relative;
+        display: block;
+        top: -4px;
+     }
+     header > .header-form0 > svg {
+         position: absolute;
+         right: 5px;
+         top: 29%;
+     }
+     header > .header-form0 > input {
+        margin-top: 10px;
+        text-indent: 10px;
+        width: 25vw;
+        padding: 7px 0;
+        border-radius: 10px;
+        border: none;
+     }
+     header > .header-form0 > input:focus {
+        width: 45vw;
+    }
+
+
+
+    
+    .main-thumb {
+        display:none;
+    }
+    .main-thumb2 {
+        display: block;
+    }
+    .main-thumb2 > img {
+        max-width: 100%;
+    }
+    .main-section-itens {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
