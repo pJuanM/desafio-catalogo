@@ -8,12 +8,16 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(180, 180, 197);
 }
 
 a {
     text-decoration: none;
 }
-
+input {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
 
 header {
     background-image:linear-gradient(to bottom, #00A2BE, rgba(0, 0, 0, 0.815)) ;
@@ -43,7 +47,7 @@ header > .header-form0 {
 }
 
 .header-icones-instagram {
-    display: inline-block
+    display:none;
 }
 .header-icones-facebook {
     display: none;
@@ -58,13 +62,13 @@ header > .header-form0 {
     margin-bottom: 5px;
 }
 .header-icones-twitter {
-    display: inline-block;
+    display: none;
 }
 
 
 header > .header-form1 {
-   margin:auto;
    position: relative;
+   left: 0px;
 }
 header > .header-form1 > svg {
     position: absolute;
@@ -77,16 +81,24 @@ header > .header-form1 > input {
     width: 90vw;
     padding: 7px 0;
     border-radius: 10px;
-    border: none;
+    border: 2px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
-
+header > .header-form1 > input:focus {
+    border: 2px solid #00A2BE;
+}
+input:focus {
+   font-weight: bold;
+}
 
 
 
 nav {
     background-color:rgba(0, 0, 0, 0.815) ;
     padding: 10px 20px;
-    
+    display: flex;
+    justify-content: space-between;
 }
 nav > a {
     margin-right: 15px;
@@ -101,7 +113,7 @@ nav > a:hover {
 
 
 main {
-    background-color: rgb(180, 180, 197);
+    
     padding: 5px;
     height: 100%;
 }
@@ -170,6 +182,7 @@ main > article h2:hover {
     padding: 5px 10px;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: none;
 }
 .main-section-item-preco  {
     padding: 7px 10px;
@@ -208,9 +221,9 @@ main > article h2:hover {
 
 
 main > aside {
-    background-color: #0000009d;
+    background-color: #00a1bec5;
     text-align: center;
-    padding-bottom: 7px;
+    padding-bottom: 9px;
     border-radius: 10px;
 }
 main > aside > h3 {
@@ -220,15 +233,27 @@ main > aside > h3 {
 }
 main > aside > label {
     color: white;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 main > aside > input {
-    border: none;
-    border-radius: 5px;
     width: 60vw;
-    text-indent: 10px;
-    padding: 5px;
+    text-indent: 14px;
     margin-left: 4px;
+    position: relative;
+    padding: 9px 0;
+    border-radius: 10px;
+    border: 1px solid #00A2BE;
 }
+main > aside > input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.753);
+}
+main > aside > input::placeholder {
+    color:#0d3e47cb;
+}
+
 
 
 
