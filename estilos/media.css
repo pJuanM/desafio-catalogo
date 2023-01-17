@@ -41,6 +41,10 @@
         display: block;
     }
 
+    .main-section-item-remover {
+        display: none;
+    }
+
     
     
 }
