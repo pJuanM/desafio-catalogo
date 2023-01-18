@@ -30,6 +30,7 @@
     .main-thumb2 {
         display: block;
         max-width: 100%;
+        background-color: white;
     }
     .main-thumb2 > img {
         width: 100%;
@@ -85,7 +86,7 @@
      header > .header-form0 > svg {
          position: absolute;
          right: 5px;
-         top: 29%;
+         top: 30%;
      }
      header > .header-form0 > input {
         margin-top: 10px;
@@ -112,6 +113,7 @@
     }
     .main-thumb2 > img {
         max-width: 100%;
+        background-color: white;
     }
     .main-section-itens {
         grid-template-columns: 25% 25% 25% 25%;
