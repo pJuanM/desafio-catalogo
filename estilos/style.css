@@ -186,6 +186,7 @@ main > article h2:hover {
     overflow: hidden;
     text-overflow: ellipsis;
     display: none;
+    color:black;
 }
 .main-section-item-preco  {
     padding: 7px 10px;
